@@ -5,5 +5,5 @@
 </p>
 
 ## Assignments
--   (Links will be added as assignments are)
+-   [Hello World Tests README](HelloWorld/README.md)
 
