@@ -5,5 +5,8 @@
 </p>
 
 ## Assignments
+
+### Hello World!
+-   [Hello World Folder](HelloWorld)
 -   [Hello World Tests README](HelloWorld/README.md)
 
