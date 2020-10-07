@@ -1,6 +1,6 @@
 package com.example.oop;
 
-public class homeSpeaker {
+public class homeSpeaker implements Speaker {
     public homeSpeaker(double size, double frequency) {
         if(size > 0.0 && frequency > 0.0) {
             this.size = size;
@@ -17,13 +17,36 @@ public class homeSpeaker {
     private double size;
     private double frequency;
     private String type;
+    private String brand;
 
     public double getSize() {
         return size;
     }
 
+    @Override
+    public void setSize(double size) {
+        if(size > 0.0) {
+            this.size = size;
+        } else {
+            String error = "Error, Invalid Size: " + size + "\nSize Must Be Positive.";
+            throw new IllegalArgumentException(error);
+        }
+
+    }
+
     public double getFrequency() {
         return frequency;
+    }
+
+    @Override
+    public void setFrequency(double frequency) {
+        if(frequency > 0.0) {
+            this.frequency = frequency;
+        } else {
+            String error = "Error, Invalid Frequency: " + frequency + "\nFrequency Must Be Positive.";
+            throw new IllegalArgumentException(error);
+        }
+
     }
 
     public void setType(double frequency) {
@@ -37,6 +60,16 @@ public class homeSpeaker {
             this.frequency = frequency;
             type = "Woofer";
         }
+    }
+
+    @Override
+    public String getBrand() {
+        return brand;
+    }
+
+    @Override
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public String getType() {
