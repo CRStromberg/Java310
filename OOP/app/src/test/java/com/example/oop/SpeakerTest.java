@@ -1,4 +1,6 @@
-package com.example.objects;
+package com.example.oop;
+
+import com.example.oop.Speaker;
 
 import org.junit.Test;
 
