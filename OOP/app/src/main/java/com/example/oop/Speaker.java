@@ -26,6 +26,7 @@ public class Speaker {
         return frequency;
     }
 
+    /*
     public void setType(double frequency) {
         if (frequency >= 3000.0) {
             this.frequency = frequency;
@@ -38,6 +39,8 @@ public class Speaker {
             type = "Woofer";
         }
     }
+
+     */
 
     public String getType() {
         return type;
