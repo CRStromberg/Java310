@@ -82,7 +82,6 @@ public class homeSpeakerTest {
     public void GetType() {
         double size = 6.5;
         double frequency = 87.32;
-        String type = "Woofer";
         homeSpeaker instance = new homeSpeaker(size, frequency);
         assertEquals(null, instance.getType(), null);
     }

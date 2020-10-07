@@ -4,7 +4,7 @@ public class DefaultSpeaker implements Speaker {
 
     private double size;
     private double  frequency;
-    private String type;
+    private String type = "";
     private String brand = "";
 
     private static double checkSize(double size) {
@@ -45,13 +45,10 @@ public class DefaultSpeaker implements Speaker {
 
     private String checkType(double frequency) {
         if (frequency >= 3000.0) {
-            this.frequency = frequency;
             type = "Tweeter";
         } else if (frequency >= 100.0) {
-            this.frequency = frequency;
             type = "Midrange";
         } else {
-            this.frequency = frequency;
             type = "Woofer";
         }
         return type;
