@@ -1,7 +1,7 @@
 package com.example.oop;
 
-public class Speaker {
-    public Speaker(double size, double frequency) {
+public class homeSpeaker {
+    public homeSpeaker(double size, double frequency) {
         if(size > 0.0 && frequency > 0.0) {
             this.size = size;
             this.frequency = frequency;

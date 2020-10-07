@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class SpeakerTest {
+public class homeSpeakerTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void invalidSize() {
@@ -12,7 +12,7 @@ public class SpeakerTest {
         double frequency = 100;
         String error = "Error, Invalid Size: " + invalidSize + "\nSize Must Be Positive.";
         try {
-            Speaker instance = new Speaker(invalidSize, frequency);
+            homeSpeaker instance = new homeSpeaker(invalidSize, frequency);
         } catch (IllegalArgumentException ex) {
             assertEquals(error, ex.getMessage());
             throw ex;
@@ -25,7 +25,7 @@ public class SpeakerTest {
         double frequency = -100;
         String error = "Error, Invalid Frequency: " + invalidSize + "\nFrequency Must Be Positive.";
         try {
-            Speaker instance = new Speaker(invalidSize, frequency);
+            homeSpeaker instance = new homeSpeaker(invalidSize, frequency);
         } catch (IllegalArgumentException ex) {
             assertEquals(error, ex.getMessage());
             throw ex;
@@ -36,7 +36,7 @@ public class SpeakerTest {
     public void GetSize() {
         double size = 6.5;
         double frequency = 200;
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         assertEquals(size, instance.getSize(), 6.5);
     }
 
@@ -44,7 +44,7 @@ public class SpeakerTest {
     public void GetFrequency() {
         double size = 6.5;
         double frequency = 200;
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         assertEquals(frequency, instance.getFrequency(), 200);
     }
 
@@ -53,7 +53,7 @@ public class SpeakerTest {
         double size = 6.5;
         double frequency = 10900;
         String type = "Tweeter";
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         instance.setType(frequency);
         assertEquals(type, instance.getType(), "Tweeter");
     }
@@ -63,7 +63,7 @@ public class SpeakerTest {
         double size = 6.5;
         double frequency = 900.88;
         String type = "Midrange";
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         instance.setType(frequency);
         assertEquals(type, instance.getType(), "Midrange");
     }
@@ -73,7 +73,7 @@ public class SpeakerTest {
         double size = 6.5;
         double frequency = 87.32;
         String type = "Woofer";
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         instance.setType(frequency);
         assertEquals(type, instance.getType(), "Woofer");
     }
@@ -83,7 +83,7 @@ public class SpeakerTest {
         double size = 6.5;
         double frequency = 87.32;
         String type = "Woofer";
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         assertEquals(null, instance.getType(), null);
     }
 
@@ -91,7 +91,7 @@ public class SpeakerTest {
     public void isAudibleTrue() {
         double size = 32.7;
         double frequency = 298.43;
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         assertEquals(true, instance.isAudible());
     }
 
@@ -99,7 +99,7 @@ public class SpeakerTest {
     public void isAudibleFalse() {
         double size = 0.75;
         double frequency = 9.45;
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         assertEquals(false, instance.isAudible());
     }
 
@@ -107,7 +107,7 @@ public class SpeakerTest {
     public void setAudible() {
         double size = 6.5;
         double frequency = 87.32;
-        Speaker instance = new Speaker(size, frequency);
+        homeSpeaker instance = new homeSpeaker(size, frequency);
         instance.setAudible(instance.isAudible());
         assertEquals(true, instance.isAudible());
         instance.setType(frequency);
