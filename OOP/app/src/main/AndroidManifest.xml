@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.objects">
+    package="com.example.oop">
 
     <application
         android:allowBackup="true"

@@ -1,4 +1,4 @@
-package com.example.objects;
+package com.example.oop;
 
 public class Speaker {
     public Speaker(double size, double frequency) {
