@@ -10,4 +10,8 @@ public interface Speaker {
     String getBrand();
     void setBrand(String brand);
 
+    default boolean isAudible() {
+        return getFrequency() >= 20.0;
+    }
+
 }
