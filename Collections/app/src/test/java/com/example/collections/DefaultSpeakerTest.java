@@ -14,6 +14,19 @@ public class DefaultSpeakerTest {
         assertEquals(size, instance.getSize(), 0.0);
     }
 
+    @Test (expected = IllegalArgumentException.class)
+    public  void getBadSize() {
+        double invalidSize = -1.4;
+        double frequency = 100;
+        String error = "Error, Invalid Size: " + invalidSize + "\nSize Must Be Positive.";
+        try {
+            homeSpeaker instance = new homeSpeaker(invalidSize, frequency);
+        } catch (IllegalArgumentException ex) {
+            assertEquals(error, ex.getMessage());
+            throw ex;
+        }
+    }
+
     @Test
     public void setSize() {
         double size = 25.4;
@@ -22,6 +35,21 @@ public class DefaultSpeakerTest {
         double newSize = 6.5;
         instance.setSize(newSize);
         assertEquals(newSize,instance.getSize(), 0.0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void invalidSetSize() {
+        double size = 6.51;
+        double invalidSize = -1.4;
+        double frequency = 100;
+        String error = "Error, Invalid Size: " + invalidSize + "\nSize Must Be Positive.";
+        try {
+            DefaultSpeaker instance = new DefaultSpeaker(size, frequency);
+            instance.setSize(invalidSize);
+        } catch (IllegalArgumentException ex) {
+            assertEquals(error, ex.getMessage());
+            throw ex;
+        }
     }
 
     @Test
@@ -40,6 +68,21 @@ public class DefaultSpeakerTest {
         double newFrequency = 300.91;
         instance.setFrequency(newFrequency);
         assertEquals(newFrequency, instance.getFrequency(), 0.0);
+    }
+
+    @Test (expected = IllegalArgumentException.class)
+    public void SetBadFrequency() {
+        double invalidSize = 1.4;
+        double frequency= 34.88;
+        double badFrequency = -100;
+        String error = "Error, Invalid Frequency: " + badFrequency + "\nFrequency Must Be Positive.";
+        try {
+            DefaultSpeaker instance = new DefaultSpeaker(invalidSize, frequency);
+            instance.setFrequency(badFrequency);
+        } catch (IllegalArgumentException ex) {
+            assertEquals(error, ex.getMessage());
+            throw ex;
+        }
     }
 
     @Test
@@ -96,5 +139,21 @@ public class DefaultSpeakerTest {
         DefaultSpeaker instance = new DefaultSpeaker(size, frequency);
         instance.setBrand(brand);
         assertEquals("Set brand to dayton", instance.getBrand(), brand);
+    }
+
+    @Test (expected = IllegalArgumentException.class)
+    public void SetBadBrand() {
+        double size = 1.4;
+        double frequency= 34.88;
+        String brand = "Dayton";
+        String badBrand = null;
+        String error = "Invalid Brand (null).  \nCan't be null.";
+        try {
+            DefaultSpeaker instance = new DefaultSpeaker(size, frequency);
+            instance.setBrand(badBrand);
+        } catch (IllegalArgumentException ex) {
+            assertEquals(error, ex.getMessage());
+            throw ex;
+        }
     }
 }

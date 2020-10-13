@@ -3,22 +3,22 @@ package com.example.collections;
 public class Manufacture implements Comparable <Manufacture> {
     private double ampVoltage;
     private double resistance;
-    private String location;
+    private String brand;
 
     public double getAmpVoltage() {
         return ampVoltage;
     }
 
     public String getLocation() {
-        return location;
+        return brand;
     }
 
     public double getResistance() {
         return resistance;
     }
 
-    public Manufacture(double ampVoltage, String location, double resistance) {
-        this.location = location;
+    public Manufacture(double ampVoltage, String brand, double resistance) {
+        this.brand = brand;
         this.resistance = checkResistance(resistance);
         this.ampVoltage = checkAmpVoltage(ampVoltage);
 
@@ -50,7 +50,7 @@ public class Manufacture implements Comparable <Manufacture> {
     @Override
     public int compareTo(Manufacture another) {
         int i;
-        i = this.location.compareTo(another.location);
+        i = this.brand.compareTo(another.brand);
 
         if(i != 0) {
             return i;
@@ -68,7 +68,7 @@ public class Manufacture implements Comparable <Manufacture> {
 
     @Override
     public int hashCode() {
-        return 3*location.hashCode()+ 43*Double.hashCode(this.ampVoltage)+ 7*Double.hashCode(this.resistance);
+        return 3*brand.hashCode()+ 43*Double.hashCode(this.ampVoltage)+ 7*Double.hashCode(this.resistance);
     }
 
     public boolean equal(Object to) {
