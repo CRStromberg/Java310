@@ -17,3 +17,7 @@
 ### OOP
 - [OOP Folder](OOP)
 - [OOP README](OOP/README.md)
+
+### Collections
+-   [Collections Folder](Collections)
+-   [Collections README](Collections/README.md)
