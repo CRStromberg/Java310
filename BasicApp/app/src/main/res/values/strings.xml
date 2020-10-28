@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cooking Conversion</string>
+    <string name="cups">Cups</string>
+    <string name="quart">Quarts</string>
+    <string name="liter">Liters</string>
+    <string name="tsp">TSP</string>
+    <string name="tbs">TBS</string>
+    <string name="Banner">Quickly Convert Measurements!</string>
+    <string name="ButCon">Convert</string>
+    <string name="ButCle">Clear</string>
+</resources>

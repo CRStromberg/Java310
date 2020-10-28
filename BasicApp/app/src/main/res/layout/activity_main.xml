@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="335dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/Banner" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="165dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="911dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/ButCon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/ButCon" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="164dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/ButCle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/ButCle" />
+
+    <EditText
+        android:id="@+id/cups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="236dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/cups"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="Number to be converted"
+        tools:ignore="LabelFor"/>
+
+
+    <EditText
+        android:id="@+id/tbsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="464dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/tbs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tbs"
+        android:autofillHints="Number to be converted"
+        tools:ignore="LabelFor"/>
+
+    <EditText
+        android:id="@+id/tsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="408dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/tsp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tsp"
+        android:autofillHints="Number to be converted"
+        tools:ignore="LabelFor"/>
+
+    <EditText
+        android:id="@+id/liter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="352dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/liter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/liter"
+        android:autofillHints="Number to be converted"
+        tools:ignore="LabelFor"/>
+
+    <EditText
+        android:id="@+id/quart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="296dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/quart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/quart"
+        android:autofillHints="Number to be converted"
+        tools:ignore="LabelFor"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
