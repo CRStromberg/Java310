@@ -20,105 +20,150 @@
         app:layout_constraintVertical_bias="0.0"
         tools:text="@string/Banner" />
 
+
     <Button
         android:id="@+id/buttonConvert"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="165dp"
         android:layout_height="47dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="911dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="224dp"
         android:text="@string/ButCon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         tools:text="@string/ButCon" />
-
-    <Button
-        android:id="@+id/buttonClear"
-        android:layout_width="164dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginBottom="37dp"
-        android:text="@string/ButCle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="@string/ButCle" />
 
     <EditText
         android:id="@+id/cups"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
+        android:hint="@string/cups"
         android:inputType="numberDecimal"
-        android:text="@string/cups"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="Number to be converted"
-        tools:ignore="LabelFor"/>
-
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/tbsp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="464dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="212dp"
+        android:autofillHints="Number to be converted"
         android:ems="10"
+        android:hint="@string/tbs"
         android:inputType="numberDecimal"
-        android:text="@string/tbs"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/tbs"
-        android:autofillHints="Number to be converted"
-        tools:ignore="LabelFor"/>
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/tsp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="176dp"
+        android:autofillHints="Number to be converted"
         android:ems="10"
+        android:hint="@string/tsp"
         android:inputType="numberDecimal"
-        android:text="@string/tsp"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/tsp"
-        android:autofillHints="Number to be converted"
-        tools:ignore="LabelFor"/>
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/liter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="352dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="140dp"
+        android:autofillHints="Number to be converted"
         android:ems="10"
+        android:hint="@string/liter"
         android:inputType="numberDecimal"
-        android:text="@string/liter"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/liter"
-        android:autofillHints="Number to be converted"
-        tools:ignore="LabelFor"/>
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/quart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="96dp"
+        android:autofillHints="Number to be converted"
         android:ems="10"
+        android:hint="@string/quart"
         android:inputType="numberDecimal"
-        android:text="@string/quart"
+        android:text="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/quart"
-        android:autofillHints="Number to be converted"
-        tools:ignore="LabelFor"/>
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="42dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/cups"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="@string/quart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cups" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/liter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/tsp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/tbs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/ButCle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConvert" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
