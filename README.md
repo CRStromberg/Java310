@@ -21,3 +21,7 @@
 ### Collections
 -   [Collections Folder](Collections)
 -   [Collections README](Collections/README.md)
+
+### Android App
+-   [Basic App Folder](BasicApp)
+-   [Basic App README](BasicApp/README.md)
