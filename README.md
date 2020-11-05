@@ -25,3 +25,7 @@
 ### Android App
 -   [Basic App Folder](BasicApp)
 -   [Basic App README](BasicApp/README.md)
+
+### Kattis
+-   [Kattis Folder](Kattis)
+-   [Kattis README](Kattis/README.md)
