@@ -4,6 +4,7 @@
 My app calculates the demensions of a Transmission line eclosure for a speaker. I did want
 it to use sqlite, but I couldn't get it to run on the emulator.  I even thought
 about writing a block chain for it, but ran out of time.</p>
+
 ### Java File
 -	[MainActivity](app/src/main/java/com/example/tlinefinal/MainActivity.java)
 
