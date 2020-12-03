@@ -9,8 +9,8 @@
         <option name="gradleJvm" value="1.8" />
         <option name="modules">
           <set>
-            <option value="/media/chris/New and Other Media/LinuxFiles/Fall2020/Java310/FinalProject" />
-            <option value="/media/chris/New and Other Media/LinuxFiles/Fall2020/Java310/FinalProject/app" />
+            <option value="/media/chris/New and Other Media/Files/Fall2020/Java310/FinalProject2" />
+            <option value="/media/chris/New and Other Media/Files/Fall2020/Java310/FinalProject2/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
