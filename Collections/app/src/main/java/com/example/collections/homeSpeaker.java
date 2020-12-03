@@ -9,7 +9,7 @@ public class homeSpeaker implements Speaker {
             String error = "Error, Invalid Size: " + size + "\nSize Must Be Positive.";
             throw new IllegalArgumentException(error);
         }else if(frequency < 0) {
-            String error = "Error, Invalid Frequency: " + size + "\nFrequency Must Be Positive.";
+            String error = "Error, Invalid Frequency: " + frequency + "\nFrequency Must Be Positive.";
             throw new IllegalArgumentException(error);
         }
     }

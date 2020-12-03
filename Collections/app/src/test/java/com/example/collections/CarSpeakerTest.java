@@ -27,7 +27,7 @@ public class CarSpeakerTest {
         double size = 14.2;
         CarSpeaker instance = new CarSpeaker(size);
         assertEquals(size, instance.getSpeakerSize(), 0.0);
-        instance.setSize(9.62);
+        instance.setCarSpeaker(9.62);
         assertEquals(9.62, instance.getSpeakerSize(), 0.0);
     }
 

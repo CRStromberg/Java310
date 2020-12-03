@@ -17,3 +17,15 @@
 ### OOP
 - [OOP Folder](OOP)
 - [OOP README](OOP/README.md)
+
+### Collections
+-   [Collections Folder](Collections)
+-   [Collections README](Collections/README.md)
+
+### Android App
+-   [Basic App Folder](BasicApp)
+-   [Basic App README](BasicApp/README.md)
+
+### Kattis
+-   [Kattis Folder](Kattis)
+-   [Kattis README](Kattis/README.md)
