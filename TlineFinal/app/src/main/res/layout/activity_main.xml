@@ -63,7 +63,7 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="Fs (Hz)"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -75,7 +75,7 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="Sd (sq inches)"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpeakerFs" />
 
@@ -87,7 +87,7 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="Diameter (inch)"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SpeakerSd" />
 
