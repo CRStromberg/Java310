@@ -9,3 +9,6 @@
 
 ### XML
 -	[App Design](app/src/main/res/layout/activity_main.xml)
+
+### ScreenShot
+-	[Screenshot of working app](screenshot.png)
